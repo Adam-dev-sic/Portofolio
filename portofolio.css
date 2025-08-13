@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  display: grid;
+  grid-template-rows: 700px 1400px 400px;
+  grid-template-columns: 1fr;
+
+  border-radius: 10px;
+}
+
+@font-face {
+  font-family: "ROBOTH";
+  src: url(./Fonts/RobotoCondensed-Italic-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mar";
+  src: url(./Fonts/MerriweatherSans-Italic-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Varela";
+  src: url(./Fonts/VarelaRound-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-row: 1/2;
+  background-color: #222629;
+  border-radius: 5px;
+  width: auto;
+}
+.traveler {
+  grid-column: 1/2;
+  width: 500px;
+  height: 600px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+.text {
+  margin-top: 200px;
+  margin-left: 450px;
+  border-radius: 20px;
+  padding: 30px;
+  height: 200px;
+  max-width: 600px;
+  color: white;
+  background-color: #202427;
+  font-family: "Varela";
+}
+.text h1 {
+  color: #98dd35;
+  margin-left: 220px;
+  font-family: "Mar";
+}
+.text button {
+  background-color: #98dd35;
+  width: 180px;
+  height: 60px;
+  border-radius: 20px;
+  border: 0px;
+  color: white;
+  margin-left: 450px;
+  font-size: 20px;
+}
+section {
+  grid-row: 2/3;
+}
+footer {
+  grid-row: 3/4;
+}
+.wholesome {
+  width: 300px;
+}
+
+section {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #222629;
+  padding: 10px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  border: 7px solid #202427;
+  margin: 20px;
+  max-width: 500px;
+  height: 600px;
+  background-color: #202427;
+  border-radius: 10px;
+}
+
+section img {
+  width: 500px;
+  height: 300px;
+}
+
+section h1 {
+  color: #98dd35;
+  font-family: "Mar";
+}
+
+section p {
+  color: white;
+  font-family: "Varela";
+}
+
+.git {
+  height: 100px;
+  width: 100px;
+}
+section i {
+  font-size: 60px;
+  color: white;
+  margin-left: 430px;
+}
+
+footer {
+  display: grid;
+  grid-template-rows: 3/4;
+  background-color: #222629;
+  grid-template-columns: 1fr 1fr 200px;
+  border: 5px solid #98dd35;
+  border-radius: 10px;
+}
+footer .contacting {
+  text-align: center;
+  margin-left: 50px;
+}
+footer img {
+  height: 330px;
+  width: 330px;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+footer h1 {
+  color: #98dd35;
+  font-family: "Mar";
+  text-align: center;
+}
+footer p {
+  font-family: "Varela";
+  color: white;
+}
+footer .socials {
+  margin-top: 300px;
+}
+footer i {
+  color: #98dd35;
+  font-size: 60px;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+@media (max-width: 600px) {
+  #container {
+    max-width: 600px;
+    grid-template-rows: 900px 1fr 1000px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px;
+    max-width: 600px;
+  }
+  header .text {
+    margin: 0px;
+
+    margin-top: 250px;
+    width: 550px;
+  }
+  .text button {
+    margin: 0px;
+    margin-left: 160px;
+  }
+  header .traveler {
+    width: auto;
+    height: auto;
+    margin: 10px;
+  }
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 400px;
+    max-width: 590px;
+  }
+  footer .wholesome {
+    margin-top: 30px;
+    min-width: 400px;
+    height: 500px;
+    margin: 0px;
+    margin-top: -50px;
+    margin-left: 80px;
+  }
+  footer .socials {
+    margin-left: 200px;
+    margin-top: 100px;
+  }
+}
